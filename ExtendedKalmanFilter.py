@@ -511,7 +511,7 @@ def main():
     
     # Bước 1: Đọc dữ liệu gốc
     print("Bước 1: Đọc dữ liệu pin...")
-    original_data = load_battery_data('Book3.xlsx')
+    original_data = load_battery_data('simulation_data.xlsx')
     print(f"Đã đọc {len(original_data)} điểm dữ liệu")
     print(f"Thời gian: {original_data['Time'].iloc[0]:.1f}s đến {original_data['Time'].iloc[-1]:.1f}s")
     print(f"SOC: {original_data['SOC'].min():.3f} đến {original_data['SOC'].max():.3f}")
